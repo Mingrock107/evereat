@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>怪獸吞噬者</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+</head>
+<body>
+  <div id="game">
+    <h1>吞噬數量: <span id="score">0</span></h1>
+    <div id="monster" class="monster">👾</div>
+    <div id="生物群" class="生物群"></div>
+    <div class="升級面板">
+      <button onclick="升級('速度')">升級速度 (需要 DNA: <span id="dnaCost速度">100</span>)</button>
+      <button onclick="升級('效率')">升級效率 (需要 DNA: <span id="dnaCost效率">200</span>)</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
